@@ -1,0 +1,15 @@
+.navbar {
+  background: $navbar-background;
+  a {
+    color: #fff;
+  }
+  a:hover {
+    color: $active;
+  }
+  .navbar-right {
+    float: right;
+  }
+  .active {
+    color: $active;
+  }
+}
