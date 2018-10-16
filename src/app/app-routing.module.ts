@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './ui/home/home.component';
-import { RegisterComponent } from './ui/register/register.component';
-import { LoginComponent } from './ui/login/login.component';
 
-const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },
+const routes: Routes = [{
+    path: '',
+    loadChildren: './main/main.module#MainModule'
+  }, {
+    path: '',
+    loadChildren: './ui/ui.module#UiModule'
+  },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 

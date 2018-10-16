@@ -1,5 +1,7 @@
 .navbar {
-  background: $navbar-background;
+  background: transparent;
+  position: absolute;
+  width: 100%;
   a {
     color: #fff;
   }
