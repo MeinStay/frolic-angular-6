@@ -1,21 +1,27 @@
 .baner {
-  background: url('/assets/images/banner-back.jpg') no-repeat center center; 
+  background: url('/assets/images/banner-back.jpg') no-repeat top center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 500px;
+  min-height: 590px;
 }
 .jumbotron {
   background-color: transparent;
   color: #fff;
   text-align:center;
   padding: 7rem;
+  width: 90%;
+  margin: 0 auto;
   @media #{$screen-xs} {
     padding: 7rem 0rem;
   }
   font-size: $font-size-30;
-  cite {
-    font-size: $font-size-25;
+  .form-control {
+    font-size: 1.3rem;
+    padding: 1.5rem;
+  }
+  .search-container {
+    margin-top: 170px;
   }
 }
