@@ -1,0 +1,32 @@
+@import '~src/styles';
+.baner {
+    background: url("/assets/images/banner-back.jpg");
+    height: 590px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .jumbotron {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 7rem;
+    position: relative;
+    height: 100%;
+    h1 {
+      font-size: 3rem;
+    }
+    .search-container {
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0;
+      position: absolute;
+      top: 50%;
+    }
+  }
+  .item-card {
+    padding: 1rem 2rem;
+    height: 200px;
+    border: 1px solid #ddd;
+  }
+  

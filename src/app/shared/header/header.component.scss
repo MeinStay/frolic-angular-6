@@ -1,0 +1,20 @@
+@import '~src/styles';
+.navbar {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    a {
+      color: #fff;
+    }
+    a:hover {
+      color: $active;
+    }
+    .navbar-right {
+      float: right;
+    }
+    .active {
+      color: $active;
+    }
+  }
+  
