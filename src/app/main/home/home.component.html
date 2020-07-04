@@ -1,28 +1,26 @@
 <main>
   <section class="baner">
     <div class="jumbotron">
-     
-     <div class="search-container">
-       <h1>Shop for Cool Sports Items &amp; Accessories</h1>
-    </div>
+      <div class="banner-content">
+        <h1>Shop For Your Favorite, Cool & Amazing Sports Products</h1>
+      </div>
     </div>
   </section>
   <section class="main-container container m-t-30">
     <section class="row">
-      <aside class="col-md-3 col-xs-12 col-sm-12">
-        filters
-      </aside>
-      <section class="col-md-9 col-xs-12 col-sm-12">
+      <section class="products-list col-md-12 col-xs-12">
         <section class="new-arrivals">
-          <h5>New Arrivals</h5>
+          <h5 class="item-heading">New Arrivals</h5>
+          <app-product-cards></app-product-cards>
         </section>
         <section class="featured-products">
-          <h5>Featured Products</h5>
+          <h5 class="item-heading">Featured Products</h5>
+          <app-product-cards></app-product-cards>
         </section>
         <section class="popular-products">
-          <h5>Popular Products</h5>
+          <h5 class="item-heading">Popular Products</h5>
+          <app-product-cards></app-product-cards>
         </section>
-        <app-product-cards></app-product-cards>
       </section>
     </section>
   </section>

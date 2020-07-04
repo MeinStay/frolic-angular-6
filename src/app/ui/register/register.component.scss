@@ -1,0 +1,90 @@
+@import "~src/styles";
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 50px 30px;
+  @media only screen and (max-width: $screen-xs-max) {
+    width:100%;
+  }
+}
+.form-text {
+  background: transparent;
+  border: none;
+  padding: 20px 30px;
+  width: 100%;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+input:focus {
+  outline:none;
+  border-bottom: 1px solid #28a745;
+}
+.form-group {
+  padding: 30px 0px;
+}
+.form-heading {
+  text-align: center;
+  @media only screen and (max-width: $screen-xs-max) {
+    font-size: 2.0rem;
+  }
+}
+.form-sub-heading {
+  text-align: center;
+  @media only screen and (max-width: $screen-xs-max) {
+    font-size: 1.3rem;
+  }
+}
+.submit-button {
+  padding: 15px;
+  width: 50%;
+  margin: 0 auto;
+  @media only screen and (max-width: $screen-xs-max) {
+    width: 100%;
+  }
+  button {
+    width: 100%;
+    padding: 11px;
+    font-size: 22px;
+  }
+}
+.signup-text {
+  font-size: 22px;
+  text-align: center;
+
+  margin-bottom: 0px;
+  &:first-child {
+    @media only screen and (max-width: $screen-xs-max) {
+      text-align: left;
+    }
+  }
+  &:nth-child(2) {
+    @media only screen and (max-width: $screen-xs-max) {
+      text-align: right;
+    }
+  }
+}
+.error {
+  padding: 10px 30px;
+  color: red;
+}
+.operation-error {
+  padding: 40px 30px 0px 30px;
+  color: red;
+  margin-bottom: 0;
+  text-align: center;
+}
+.success {
+  padding: 40px 30px 0px 30px;
+  color: #28a745;
+  text-align: center;
+  margin-bottom: 0;
+}
+button[disabled] {
+  cursor: not-allowed;
+}
+.logout-link {
+  padding: 20px 30px;
+  text-decoration: none;
+  float: right;
+  font-size: 22px;
+}

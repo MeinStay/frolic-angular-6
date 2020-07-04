@@ -1,3 +1,66 @@
-<p>
-  register works!
-</p>
+<main class="form-container">
+  <h1 class="form-heading">Looks like you are new here! </h1>
+  <h4 class="form-sub-heading">Sign up with below details to get started..</h4>
+ <!--  <p class="success" *ngIf="isSignUpSuccess">
+    User registered successfully. Procced to <a routerLink="/">Login</a>
+  </p> -->
+ <!--  <p class="operation-error" *ngIf="isOperationFailed">
+    Error Occurred. Please try again.
+  </p>
+  <p class="operation-error" *ngIf="isUserAlreadyExists">
+    User Already exists. Please try some other email/username
+  </p> -->
+  <form class="register-form" #signupForm="ngForm">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-text"
+        placeholder="Name"
+        name="firstname"
+        autocomplete="off"
+        required
+      />
+      <!-- <p class="error" *ngIf="name.touched && name.invalid">
+        Please enter your name
+      </p> -->
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-text"
+        placeholder="Email"
+        name="email"
+        autocomplete="off"
+        required
+        email
+      />
+      <!-- <p class="error" *ngIf="email.touched && email.invalid">
+        Please enter proper email id
+      </p> -->
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-text"
+        placeholder="Password"
+        name="password"
+        required
+      />
+      <!-- <p class="error" *ngIf="password.touched && password.invalid">
+        Please enter password
+      </p> -->
+    </div>
+    <div class="form-group">
+      <p class="signup-text">Already a member? <a routerLink="/">Sign in</a></p>
+    </div>
+    <div class="form-group submit-button">
+      <button
+        type="button"
+        class="btn btn-success"
+        [disabled]="signupForm.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</main>

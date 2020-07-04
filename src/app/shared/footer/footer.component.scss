@@ -1,6 +1,6 @@
-@import '~src/styles';
+@import "~src/styles";
 .footer {
-    background: $navbar-background;
-    padding: 30px;
-  }
-  
+  background: $footer-background;
+  padding: 30px;
+  color: #fff;
+}

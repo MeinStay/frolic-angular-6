@@ -1,0 +1,17 @@
+@import "~src/styles";
+.item-image {
+  height: 150px;
+  margin-bottom: 0.5rem;
+}
+.item-desc {
+  .item-price {
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  .item-name {
+    margin-bottom: 5px;
+  }
+}
