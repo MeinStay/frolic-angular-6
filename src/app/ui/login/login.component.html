@@ -1,3 +1,49 @@
-<p>
-  login works!
-</p>
+<main class="form-container">
+  <h1 class="form-heading">Get ready to explore more by signing in!!</h1>
+ <!--  <p class="success" *ngIf="isSignUpSuccess">
+    User registered successfully. Procced to <a routerLink="/">Login</a>
+  </p> -->
+ <!--  <p class="operation-error" *ngIf="isOperationFailed">
+    Error Occurred. Please try again.
+  </p>
+  <p class="operation-error" *ngIf="isUserAlreadyExists">
+    User Already exists. Please try some other email/username
+  </p> -->
+  <form class="register-form" #signinForm="ngForm">
+    <div class="form-group">
+      <input
+        type="text"
+        class="form-text"
+        placeholder="Email"
+        name="email"
+        autocomplete="off"
+        required
+        email
+      />
+      <!-- <p class="error" *ngIf="email.touched && email.invalid">
+        Please enter proper email id
+      </p> -->
+    </div>
+    <div class="form-group">
+      <input
+        type="password"
+        class="form-text"
+        placeholder="Password"
+        name="password"
+        required
+      />
+      <!-- <p class="error" *ngIf="password.touched && password.invalid">
+        Please enter password
+      </p> -->
+    </div>
+    <div class="form-group submit-button">
+      <button
+        type="button"
+        class="btn btn-success"
+        [disabled]="signinForm.invalid"
+      >
+        Submit
+      </button>
+    </div>
+  </form>
+</main>
