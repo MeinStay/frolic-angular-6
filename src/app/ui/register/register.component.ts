@@ -1,19 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
+import { Component, OnInit } from "@angular/core";
+import { User } from "../data-models/user";
 
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  selector: "app-register",
+  templateUrl: "./register.component.html",
+  styleUrls: ["./register.component.scss"],
 })
 export class RegisterComponent implements OnInit {
+  public user: User = new User();
+  constructor() {}
 
-  constructor(
-    private title: Title
-  ) { }
-
-  ngOnInit() {
-    this.title.setTitle('Register');
-  }
-
+  ngOnInit() {}
 }
