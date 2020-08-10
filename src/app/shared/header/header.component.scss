@@ -17,4 +17,32 @@
       color: $active;
     }
   }
+  .navbar-toggler {
+    display: block;
+    &:focus {
+      outline:none;
+    }
+  }
+  .menu-items {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    height: 300px;
+    width: 500px;
+    background: #00B4DB;
+    ul {
+      padding:0;
+    }
+  }
+  .nav-item {
+    display:block;
+  }
+  .nav-link {
+    display: block;
+    padding: 2rem 1rem;
+    font-size: 1.5rem;
+    &:hover {
+      background: #0083B0;
+    }
+  }
 }
