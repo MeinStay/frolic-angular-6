@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "frolic-angular6-v1"
+  "defaultProject": "frolic-angular6-v1",
+  "cli": {
+    "analytics": "33bc84bb-90a4-4358-ad72-10e3fa664362"
+  }
 }
