@@ -1,12 +1,12 @@
 @import "~src/styles";
 .baner {
-  background: url("/assets/images/banner-back.jpg");
+  background: url("~/assets/images/banner-back.jpg");
   height: 590px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   @media only screen and (max-width: $screen-xs-max) {
-    background: url("/assets/images/banner-back-mobile.jpg");
+    background: url("~/assets/images/banner-back-mobile.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
